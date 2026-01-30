@@ -1,0 +1,362 @@
+.mainPage {
+    min-height: calc(100vh - 64px);
+    padding: 2rem 1.25rem 3rem;
+    background:
+        radial-gradient(1200px 600px at 15% 15%, rgba(79, 108, 202, 0.18), transparent 60%),
+        radial-gradient(900px 500px at 85% 10%, rgba(74, 144, 226, 0.18), transparent 55%),
+        linear-gradient(135deg, #e8f0f5 0%, #d4e4f0 50%, #c8dce8 100%);
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.heroContent {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(173, 216, 230, 0.35);
+    border-radius: 22px;
+    padding: 2.25rem 2rem;
+    box-shadow: 0 16px 44px rgba(100, 149, 237, 0.14);
+    backdrop-filter: blur(8px);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(100, 149, 237, 0.14);
+    color: #4a6fa5;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.title {
+    margin: 0.9rem 0 0.8rem;
+    color: #2f4e7a;
+    font-size: 3rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    margin: 0 0 1.4rem;
+    color: #5f7fa8;
+    font-size: 1.15rem;
+    line-height: 1.65;
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.primaryBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.25rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f6cca 0%, #4a90e2 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 10px 26px rgba(79, 108, 202, 0.22);
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(79, 108, 202, 0.26);
+}
+
+.primaryBtn:active {
+    transform: translateY(0);
+}
+
+.secondaryBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.25rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #4a6fa5;
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid rgba(173, 216, 230, 0.55);
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.secondaryBtn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.secondaryBtn:active {
+    transform: translateY(0);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.statCard {
+    padding: 0.9rem 0.85rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(173, 216, 230, 0.35);
+}
+
+.statValue {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #2f4e7a;
+}
+
+.statLabel {
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+    color: #5f7fa8;
+}
+
+.heroMock {
+    display: flex;
+    justify-content: center;
+}
+
+.mockCard {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(173, 216, 230, 0.4);
+    box-shadow: 0 18px 50px rgba(100, 149, 237, 0.18);
+    overflow: hidden;
+}
+
+.mockHeader {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.9rem 1rem;
+    background: rgba(100, 149, 237, 0.08);
+    border-bottom: 1px solid rgba(173, 216, 230, 0.35);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(79, 108, 202, 0.35);
+}
+
+.mockTitle {
+    padding: 1rem 1rem 0.6rem;
+    font-weight: 900;
+    color: #2f4e7a;
+}
+
+.mockRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0 1rem 0.9rem;
+}
+
+.mockPill {
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #4a6fa5;
+    background: rgba(100, 149, 237, 0.14);
+}
+
+.mockTag {
+    font-size: 0.9rem;
+    color: #6b8db8;
+}
+
+.mockList {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0 1rem 1rem;
+}
+
+.mockItem {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.65rem 0.75rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(173, 216, 230, 0.32);
+}
+
+.mockImg {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(79, 108, 202, 0.35), rgba(74, 144, 226, 0.25));
+}
+
+.mockText {
+    flex: 1;
+}
+
+.mockLineStrong {
+    height: 10px;
+    width: 70%;
+    border-radius: 999px;
+    background: rgba(47, 78, 122, 0.18);
+    margin-bottom: 8px;
+}
+
+.mockLine {
+    height: 9px;
+    width: 90%;
+    border-radius: 999px;
+    background: rgba(47, 78, 122, 0.12);
+}
+
+.mockFooter {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.9rem 1rem 1.1rem;
+    border-top: 1px solid rgba(173, 216, 230, 0.35);
+}
+
+.mockBtn {
+    height: 38px;
+    flex: 1;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(79, 108, 202, 0.7), rgba(74, 144, 226, 0.65));
+}
+
+.mockBtnOutline {
+    height: 38px;
+    flex: 0.75;
+    border-radius: 12px;
+    background: rgba(100, 149, 237, 0.12);
+    border: 1px solid rgba(173, 216, 230, 0.55);
+}
+
+.section {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    padding: 0 0.25rem;
+}
+
+.sectionTitle {
+    margin: 0 0 1rem;
+    color: #2f4e7a;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.featureCard {
+    border-radius: 20px;
+    padding: 1.25rem 1.2rem;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(173, 216, 230, 0.35);
+    box-shadow: 0 12px 34px rgba(100, 149, 237, 0.12);
+}
+
+.featureTitle {
+    margin: 0 0 0.5rem;
+    color: #2f4e7a;
+    font-weight: 900;
+}
+
+.featureText {
+    margin: 0;
+    color: #5f7fa8;
+    line-height: 1.55;
+}
+
+.cta {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    padding: 0 0.25rem;
+}
+
+.ctaInner {
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, rgba(79, 108, 202, 0.18), rgba(74, 144, 226, 0.14));
+    border: 1px solid rgba(173, 216, 230, 0.45);
+    box-shadow: 0 16px 40px rgba(100, 149, 237, 0.14);
+    text-align: center;
+}
+
+.ctaTitle {
+    margin: 0 0 0.6rem;
+    color: #2f4e7a;
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+}
+
+.ctaText {
+    margin: 0 auto 1.25rem;
+    color: #5f7fa8;
+    max-width: 680px;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 980px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .heroMock {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainPage {
+        padding: 1.25rem 0.9rem 2.5rem;
+    }
+
+    .heroContent {
+        padding: 1.6rem 1.25rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.05rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+

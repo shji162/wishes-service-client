@@ -1,0 +1,532 @@
+.singleWishPage {
+    min-height: 85.7vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8f0f5 0%, #d4e4f0 50%, #c8dce8 100%);
+}
+
+.singleWishContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(100, 149, 237, 0.15);
+    border: 1px solid rgba(173, 216, 230, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.singleWishImageSection {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background: linear-gradient(135deg, #e8f0f5 0%, #d4e4f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.singleWishImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.singleWishDetails {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.singleWishHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.singleWishName {
+    color: #4a6fa5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.singleWishStatus {
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+}
+
+.statusAvailable {
+    background-color: rgba(255, 105, 180, 0.15);
+    color: #ff1493;
+}
+
+.statusPurchased,
+.statusCompleted {
+    background-color: rgba(76, 175, 80, 0.15);
+    color: #4caf50;
+}
+
+.statusPending,
+.statusWaiting {
+    background-color: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+}
+
+.statusUnavailable,
+.statusOutOfStock {
+    background-color: rgba(244, 67, 54, 0.15);
+    color: #f44336;
+}
+
+.singleWishMeta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.singleWishCategory {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #b0d4e8 0%, #94b3d1 100%);
+    color: #4a6fa5;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.singleWishDescriptionSection {
+    flex: 1;
+}
+
+.singleWishSectionTitle {
+    color: #4a6fa5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.singleWishDescription {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.singleWishActions {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(173, 216, 230, 0.3);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.singleWishBackLink {
+    display: inline-block;
+    padding: 0.875rem 1.75rem;
+    background: linear-gradient(135deg, #4f6cca 0%, #4a90e2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.3);
+}
+
+.singleWishBackLink:hover {
+    background: linear-gradient(135deg, #4a90e2 0%, #6495ed 100%);
+    box-shadow: 0 6px 20px rgba(100, 149, 237, 0.4);
+    transform: translateY(-2px);
+}
+
+.singleWishBackLink:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(100, 149, 237, 0.3);
+}
+
+.commentsSection {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(173, 216, 230, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.commentsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.commentsTitle {
+    color: #4a6fa5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.commentsCount {
+    font-size: 0.9rem;
+    color: #6b8db8;
+}
+
+.commentForm {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.commentInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 2px solid #b0d4e8;
+    background-color: #f8fafc;
+    font-size: 0.95rem;
+    resize: vertical;
+    min-height: 48px;
+    max-height: 120px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.commentInput::placeholder {
+    color: #94b3d1;
+    opacity: 0.8;
+}
+
+.commentInput:focus {
+    border-color: #6495ed;
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.1);
+    background-color: #ffffff;
+}
+
+.commentSubmitButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #4f6cca 0%, #4a90e2 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(100, 149, 237, 0.35);
+    transition: all 0.3s ease;
+}
+
+.commentSubmitButton:hover:enabled {
+    background: linear-gradient(135deg, #4a90e2 0%, #6495ed 100%);
+    box-shadow: 0 6px 16px rgba(100, 149, 237, 0.45);
+    transform: translateY(-1px);
+}
+
+.commentSubmitButton:disabled {
+    opacity: 0.6;
+    cursor: default;
+    box-shadow: none;
+}
+
+.commentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.commentItem {
+    padding: 0.75rem 0.9rem;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    border: 1px solid rgba(173, 216, 230, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.commentText {
+    color: #4a6fa5;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.commentActions {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.35rem;
+}
+
+.commentActionButton {
+    border: none;
+    background: transparent;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #6b8db8;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.commentActionButton:hover {
+    background-color: rgba(176, 212, 232, 0.3);
+    color: #4a6fa5;
+}
+
+.commentActionButtonDelete {
+    color: #c44d56;
+}
+
+.commentActionButtonDelete:hover {
+    background-color: rgba(196, 77, 86, 0.08);
+    color: #b33841;
+}
+
+.emptyCommentsText {
+    font-size: 0.9rem;
+    color: #94b3d1;
+}
+
+.shareButtonMain {
+    padding: 0.875rem 1.75rem;
+    background: linear-gradient(135deg, #4f6cca 0%, #4a90e2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.3);
+}
+
+.shareButtonMain:hover {
+    background: linear-gradient(135deg, #4a90e2 0%, #6495ed 100%);
+    box-shadow: 0 6px 20px rgba(100, 149, 237, 0.4);
+    transform: translateY(-2px);
+}
+
+.shareButtonMain:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(100, 149, 237, 0.3);
+}
+
+.shareModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.shareModalContent {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(100, 149, 237, 0.15);
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgba(173, 216, 230, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.shareModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(173, 216, 230, 0.3);
+}
+
+.shareModalTitle {
+    color: #4a6fa5;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.shareModalClose {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #6b8db8;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.shareModalClose:hover {
+    background-color: rgba(176, 212, 232, 0.3);
+    color: #4a6fa5;
+}
+
+.shareModalBody {
+    padding: 0.5rem 0;
+}
+
+.shareButtonsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.shareButtonItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid #b0d4e8;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    min-height: 100px;
+}
+
+.shareButtonItem:hover {
+    border-color: #6495ed;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(100, 149, 237, 0.2);
+    transform: translateY(-2px);
+}
+
+.shareButtonItem > * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.shareButtonContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.shareButtonContent span {
+    color: #4a6fa5;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.copyLinkButton {
+    background-color: #f8fafc;
+    border: 2px solid #b0d4e8;
+}
+
+.copyLinkButton:hover {
+    background-color: #ffffff;
+    border-color: #6495ed;
+}
+
+.copyIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6b8db8 0%, #5a7ba8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .singleWishContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .singleWishImageSection {
+        min-height: 300px;
+    }
+
+    .singleWishDetails {
+        padding: 2rem;
+    }
+
+    .singleWishName {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .singleWishPage {
+        padding: 1rem;
+    }
+
+    .singleWishDetails {
+        padding: 1.5rem;
+    }
+
+    .singleWishName {
+        font-size: 1.75rem;
+    }
+
+    .singleWishDescription {
+        font-size: 1rem;
+    }
+
+    .singleWishActions {
+        flex-direction: column;
+    }
+
+    .shareButtonMain {
+        width: 100%;
+    }
+
+    .shareModalContent {
+        padding: 1.5rem;
+    }
+
+    .shareButtonsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .shareButtonItem {
+        min-height: 90px;
+        padding: 0.75rem;
+    }
+}
+

@@ -1,0 +1,61 @@
+.listWithWishes {
+    min-height: 85.7vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8f0f5 0%, #d4e4f0 50%, #c8dce8 100%);
+}
+
+.listHeader {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
+
+.listTitle {
+    color: #4a6fa5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.listDescriptionText {
+    color: #6b8db8;
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.wishesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .listWithWishes {
+        padding: 1rem;
+    }
+
+    .listTitle {
+        font-size: 2rem;
+    }
+
+    .listDescriptionText {
+        font-size: 1rem;
+    }
+
+    .wishesContainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wishesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
